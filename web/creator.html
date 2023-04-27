@@ -11,6 +11,7 @@
             <h1>Data Creator</h1>
             <div>
                 <input id="student" type="text" placeholder="type your name" />
+                <span id="instructions"></span>
                 <button id="advancedBtn" onclick="start();">
                     START
                 </button>
@@ -48,7 +49,7 @@
             }   
 
             function next(){
-                if(cketchPad.paths.length==0){
+                if(sketchPad.paths.length==0){
                     alert("Draw something first!");
                     return;
                 }
