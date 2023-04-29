@@ -58,3 +58,11 @@ function handleClick(sample,doScroll=TransformStreamDefaultController){
         Chart.selectSample(sample);
     }
 }
+
+function toggleInput(){
+    if(inputContainer.style.display=="none"){
+        inputContainer.style.display="block";
+    }else{
+        inputContainer.style.display="none";
+    }
+}

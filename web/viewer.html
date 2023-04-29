@@ -9,6 +9,11 @@
         <h1>Data Viewer</h1>
         <div id="inputContainer"></div>
         <div id="chartContainer"></div>
+        <div id="controlPanel">
+            <button onClick="toggleInput()">
+                Toggle Input
+            </button>
+        </div>
         <div id="container"></div>
         <script src="../common/js_objects/features.js"></script>
 
@@ -51,6 +56,8 @@
             );
 
             const sketchPad=new SketchPad(inputContainer);
+            sketchPad.canvas.style.cssText+=
+                "outline:10000px solid rgba(0,0,0,0.7);"
         </script>
     </body>
 </html>
