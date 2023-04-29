@@ -62,6 +62,7 @@ function handleClick(sample,doScroll=TransformStreamDefaultController){
 function toggleInput(){
     if(inputContainer.style.display=="none"){
         inputContainer.style.display="block";
+        SketchPad.triggerUpdates();
     }else{
         inputContainer.style.display="none";
         chart.hideDynamicPoint();
