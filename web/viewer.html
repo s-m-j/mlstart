@@ -67,13 +67,12 @@
                 point=functions.map(f=>f(paths));
                 const {label, nearestSample}=classify(point);
                 predictedLabelContainer.innerHTML="Is it a "+label+"?";
-                chart.showDynamicPoint(point);
+                chart.showDynamicPoint(point,label,nearestSample);
             }
 
             function classify(point){
                 const samplePoints=samples.map(s=>s.point);
                 const index=utils.getNearest(point, samplePoints);
-                console.log(index);
                 const nearestSample=samples[index];
                 return {label:nearestSample.label, nearestSample};
             }
