@@ -51,9 +51,11 @@ utils.getNearest=(loc,points)=>{
 
     for (let i=0;i<points.length;i++){
         const point=points[i];
+        console.log(points[i]);
         const d=utils.distance(loc, point);
 
         if (d<minDist){
+            console.log("i="+i+" points.length="+points.length);
             minDist=d;
             nearestIndex=i;
         }
